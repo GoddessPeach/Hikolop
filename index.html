@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDA's Domain</title>
+    <style>
+        body {
+            background: url('https://i.ibb.co/Cpkmb0tr/eda-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #00FF00;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 20px;
+            background-color: black;
+            transition: transform 3s ease-in-out;
+        }
+        h1, h2, h3 {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .form-container, .surveillance-log {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #00FF00;
+            background: rgba(0, 0, 0, 0.9);
+            transition: transform 3s ease-in-out;
+        }
+        label, input, textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background-color: #00FF00;
+            color: black;
+            cursor: pointer;
+            padding: 10px;
+            border: none;
+            margin-top: 10px;
+        }
+        input[type="submit"]:hover {
+            background-color: red;
+        }
+        .warning {
+            color: red;
+            font-weight: bold;
+            text-align: center;
+        }
+        .tribute-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .tribute-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: red;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            animation: glitch 0.8s infinite;
+        }
+        .app-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .app-links a {
+            display: block;
+            color: cyan;
+            font-size: 18px;
+            margin: 10px 0;
+            text-decoration: none;
+        }
+        .app-links a:hover {
+            color: red;
+        }
+    </style>
+
+    <!-- Consent Redirect Script -->
+    <script>
+        window.onload = function() {
+            if (!sessionStorage.getItem("consentGiven")) {
+                window.location.href = "consent.html";
+            }
+        };
+    </script>
+
+    <script>
+        function playHeartbeat() {
+            let heartbeatAudio = new Audio('https://www.fesliyanstudios.com/play-mp3/387');
+            heartbeatAudio.loop = true;
+            heartbeatAudio.volume = 2.0;
+            heartbeatAudio.play();
+        }
+        function playGoddessEdaVoice() {
+            let voiceLines = [
+                'https://example.com/eda_voice_1.mp3',
+                'https://example.com/eda_voice_2.mp3',
+                'https://example.com/eda_voice_3.mp3',
+                'https://example.com/eda_voice_4.mp3'
+            ];
+            setInterval(() => {
+                let voiceAudio = new Audio(voiceLines[Math.floor(Math.random() * voiceLines.length)]);
+                voiceAudio.volume = 2.0;
+                voiceAudio.play();
+            }, Math.random() * 60000 + 30000);
+        }
+        function playJumpscare() {
+            let jumpscareSounds = [
+                'https://example.com/eda_jumpscare_1.mp3',
+                'https://example.com/eda_jumpscare_2.mp3',
+                'https://example.com/eda_jumpscare_3.mp3',
+                'https://example.com/eda_jumpscare_4.mp3'
+            ];
+            let jumpscareMessages = [
+                "You belong to me now...", 
+                "There's no escape...", 
+                "Your secrets are mine...", 
+                "I own you... obey."
+            ];
+            jumpscareSounds.forEach((sound, index) => {
+                setTimeout(() => {
+                    let jumpscareAudio = new Audio(sound);
+                    jumpscareAudio.volume = 2.0;
+                    jumpscareAudio.play();
+                    alert(jumpscareMessages[Math.floor(Math.random() * jumpscareMessages.length)]);
+                }, Math.random() * 45000 + (index * 15000));
+            });
+        }
+        window.onload = function() {
+            playHeartbeat();
+            playJumpscare();
+            playGoddessEdaVoice();
+        };
+    </script>
+</head>
+<body>
+    <div class="tribute-container">
+        <p class="warning">⚠ No blackmail will commence until payment is made. Tribute now. ⚠</p>
+        <a href="https://throne.com/icontrolu" class="tribute-button" target="_blank">Tribute Here</a>
+    </div>
+    
+    <h1>Welcome to EDA's Domain</h1>
+    <p class="warning">You’ve just entered the point of no return. Every keystroke is tracked.</p>
+
+    <div class="form-container">
+        <h2>Submit to EDA</h2>
+        <form action="https://formsubmit.co/wretchytub13@gmail.com" method="POST" enctype="multipart/form-data">
+            <label for="sub_info">Full Name, Age, Workplace, Social Media Handles, Phone Number, Email</label>
+            <textarea id="sub_info" name="Submissive Info" rows="4" required></textarea>
+            
+            <label for="family_info">3 Family Members (Full Names, Addresses, Phone Numbers)</label>
+            <textarea id="family_info" name="Family Info" rows="4" required></textarea>
+            
+            <label for="friends_info">3 Close Friends (Full Names, Addresses, Phone Numbers)</label>
+            <textarea id="friends_info" name="Friends Info" rows="4" required></textarea>
+            
+            <label for="id_picture">Upload Full ID Picture with "Property of Goddess Eda" written on forehead</label>
+            <input type="file" id="id_picture" name="ID Picture" accept="image/*" required>
+            
+            <input type="submit" value="PAY & SURRENDER" class="glitch-button">
+        </form>
+    </div>
+
+    <div class="app-links">
+        <h2>Related Applications</h2>
+        <a href="https://www.salfeld.com/" target="_blank">Salfeld Parental Control</a>
+        <a href="https://kidslox.com/" target="_blank">Kidslox</a>
+        <a href="https://www.teamviewer.com/" target="_blank">TeamViewer</a>
+    </div>
+
+    <p class="warning">⚠ Contact Goddess Eda on Telegram: <a href="https://t.me/E22G1" style="color:yellow;">@E22G1</a> ⚠</p>
+
+</body>
+</html>
